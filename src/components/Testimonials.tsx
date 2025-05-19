@@ -6,17 +6,38 @@ const testimonials = [
   {
     quote: "Servicii juridice de excepție! Echipa de avocați a demonstrat profesionalism și dedicare în rezolvarea cazului meu. Recomand cu încredere!",
     author: "Mihai D.",
-    position: "Client, Caz Civil"
+    position: "Client, Caz Civil",
+    source: "Client direct"
   },
   {
     quote: "Am apelat la serviciile cabinetului pentru un litigiu comercial complex. Abordarea lor strategică și expertiza au fost determinante pentru succesul nostru.",
     author: "Elena M.",
-    position: "Director, Company SRL"
+    position: "Director, Company SRL",
+    source: "Client direct"
   },
   {
     quote: "Excelență juridică și atenție deosebită acordată fiecărui detaliu. Consultanța primită m-a ajutat să iau cele mai bune decizii pentru situația mea.",
     author: "George P.",
-    position: "Client, Dreptul Familiei"
+    position: "Client, Dreptul Familiei",
+    source: "Client direct"
+  },
+  {
+    quote: "Profesionist, amabil, dedicat. Recomand cu încredere!",
+    author: "Adrian Andrei",
+    position: "Client Google",
+    source: "Google Reviews"
+  },
+  {
+    quote: "Un avocat profesionist și foarte bine pregătit. Recomand cu încredere!",
+    author: "Florin Mihai",
+    position: "Client Google",
+    source: "Google Reviews"
+  },
+  {
+    quote: "Cel mai bun avocat din oraș! Comunicare excelentă și rezultate pe măsură.",
+    author: "Alexandru Ionescu",
+    position: "Client Google",
+    source: "Google Reviews"
   }
 ];
 
@@ -61,7 +82,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-law-navy text-white">
+    <section id="testimonials" className="py-24 bg-law-navy text-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
@@ -81,6 +102,7 @@ const Testimonials = () => {
             <div className="mb-8">
               <p className="text-law-gold font-medium text-lg">{testimonials[current].author}</p>
               <p className="text-white/60">{testimonials[current].position}</p>
+              <p className="text-white/40 text-sm mt-1">Sursă: {testimonials[current].source}</p>
             </div>
             <div className="flex justify-center space-x-4">
               <button 

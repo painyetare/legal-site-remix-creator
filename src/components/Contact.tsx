@@ -80,7 +80,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Adresă</h4>
-                    <p className="text-law-gray-dark">Strada Popa Nan, Nr. 158, Sector 3, București</p>
+                    <p className="text-law-gray-dark">Petroșani, str. Păcii, bl.5, ap.10, Jud. Hunedoara</p>
                   </div>
                 </div>
                 
@@ -91,8 +91,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Telefon</h4>
-                    <p className="text-law-gray-dark">+40 722 123 456</p>
+                    <h4 className="font-medium mb-1">Telefon/Fax</h4>
+                    <p className="text-law-gray-dark">+40.254.544.328</p>
+                    <p className="text-law-gray-dark">+40.721.236.949 – Alexandroiu Radu-Florin</p>
+                    <p className="text-law-gray-dark">+40.722.680.769 – Alexandroiu Ion</p>
                   </div>
                 </div>
                 

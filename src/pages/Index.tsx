@@ -10,6 +10,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import AnimationInit from '@/components/AnimationInit';
+import Articles from '@/components/Articles';
 
 const Index = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Index = () => {
       <About />
       <PracticeAreas />
       <Team />
+      <Articles />
       <Testimonials />
       <Contact />
       <Footer />
