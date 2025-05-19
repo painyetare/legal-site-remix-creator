@@ -43,6 +43,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Changed this logic to ensure navbar is always visible
+      // The navbar will still change style when scrolling down
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -51,11 +53,13 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    // Initial check to set correct state on page load
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-law-navy shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-law-navy shadow-md py-3' : 'bg-law-navy/90 py-5'}`}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-white font-serif text-2xl font-bold">
