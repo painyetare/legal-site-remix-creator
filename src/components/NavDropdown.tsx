@@ -1,6 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface NavDropdownProps {
   title: string;
@@ -40,14 +41,14 @@ const NavDropdown = ({ title, items }: NavDropdownProps) => {
       {isOpen && (
         <div className="absolute left-0 mt-2 z-50 bg-white shadow-md w-64 py-2 rounded">
           {items.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.href}
+              to={item.href}
               className="block px-4 py-2 text-law-navy hover:bg-law-gold/10 hover:text-law-gold transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}
