@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { 
   Book, Scale, Gavel, Handshake, 
-  MessageSquareHeart, MessageSquareQuestion 
+  MessageSquare, MessageCircleQuestion 
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -97,7 +97,7 @@ const mediationServices = [
   {
     title: 'Despre Biroul de Mediator',
     description: 'Informații despre Biroul de Mediator "Alexandroiu Radu-Florin"',
-    icon: MessageSquareHeart,
+    icon: MessageSquare,
     slug: 'despre-birou-mediator'
   },
   {
@@ -115,13 +115,13 @@ const mediationServices = [
   {
     title: 'Ședințe de Informare Gratuite',
     description: 'Participați la ședințe de informare gratuite despre avantajele medierii',
-    icon: MessageSquareQuestion,
+    icon: MessageCircleQuestion,
     slug: 'sedinte-informare'
   },
   {
     title: 'Informare Obligatorie',
     description: 'Domenii în care este necesară informarea cu privire la mediere',
-    icon: MessageSquareQuestion,
+    icon: MessageCircleQuestion,
     slug: 'informare-obligatorie'
   }
 ];
